@@ -3,6 +3,8 @@
 Check out the sample here:
 https://codesandbox.io/p/github/eshanrajapakshe/Calendar-Timeline/main?import=true
 
+![Alt text](./Screenshot_2.png?raw=true "Calendar-Timeline")
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
