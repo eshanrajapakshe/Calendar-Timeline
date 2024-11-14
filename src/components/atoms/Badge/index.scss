@@ -1,0 +1,137 @@
+@import '../../../styles/colors';
+@import '../../../styles/text';
+
+.badge {
+  @extend .extra-small-medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: fit-content;
+  padding: 2px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-height: 20px;
+
+  .dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .text {
+    line-height: 0;
+  }
+
+  .badge-remove-icon {
+    @extend .small-medium;
+    line-height: unset;
+    margin-left: 2px;
+
+    &:hover {
+      font-weight: 900;
+    }
+  }
+}
+
+.badge-removable {
+  padding: 2px 2px 2px 8px;
+}
+
+.badge-rounded {
+  border-radius: 10px;
+  perspective: 1px;
+  overflow: hidden;
+}
+
+.grey {
+  color: $gray-800;
+  background-color: $gray-100;
+
+  .dot {
+    background-color: $gray-700;
+    border: 1px solid $gray-100;
+
+    &:hover {
+      border-color: $gray-400;
+    }
+  }
+
+  .badge-remove-icon {
+    color: $gray-700;
+  }
+}
+
+.red {
+  color: $red-800;
+  background-color: $red-100;
+
+  .dot {
+    background-color: $red-700;
+    border: 1px solid $red-100;
+
+    &:hover {
+      border-color: $red-400;
+    }
+  }
+
+  .badge-remove-icon {
+    color: $red-700;
+  }
+}
+
+.yellow {
+  color: $yellow-800;
+  background-color: $yellow-100;
+
+  .dot {
+    background-color: $yellow-700;
+    border: 1px solid $yellow-100;
+
+    &:hover {
+      border-color: $yellow-400;
+    }
+  }
+
+  .badge-remove-icon {
+    color: $yellow-700;
+  }
+}
+
+.green {
+  color: $green-800;
+  background-color: $green-100;
+
+  .dot {
+    background-color: $green-700;
+    border: 1px solid $green-100;
+
+    &:hover {
+      border-color: $green-400;
+    }
+  }
+
+  .badge-remove-icon {
+    color: $green-700;
+  }
+}
+
+.blue {
+  color: $blue-800;
+  background-color: $blue-100;
+
+  .dot {
+    background-color: $blue-700;
+    border: 1px solid $blue-100;
+
+    &:hover {
+      border-color: $blue-400;
+    }
+  }
+
+  .badge-remove-icon {
+    color: $blue-700;
+  }
+}

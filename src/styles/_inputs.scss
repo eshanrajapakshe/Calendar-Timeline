@@ -1,0 +1,76 @@
+.text-input {
+  @extend .base-regular;
+  @extend .shadow-sm;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 4px 0;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  position: static;
+  color: $gray-900;
+
+  background-color: $white;
+  border: 1px solid $gray-300;
+  border-radius: 6px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  ::placeholder {
+    color: $gray-500;
+  }
+
+  &:hover {
+    ::placeholder {
+      color: $gray-600;
+    }
+  }
+
+  &:focus {
+    @extend .shadow-sm;
+    outline: $blue-500 solid 2px;
+  }
+}
+
+.input-lable {
+  @extend .base-regular;
+  color: $brand-midnight;
+  display: flex;
+  font-weight: 400;
+
+  span {
+    color: $red-500;
+    margin-left: 2px;
+  }
+}
+
+.input-disabled {
+  background: $gray-100 !important;
+  cursor: not-allowed !important;
+}
+
+.input-error {
+  outline: $red-500 solid 1px;
+}
+
+.input-message-text {
+  @extend .small-regular;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin-bottom: 4px;
+}
+
+.input-error-message {
+  @extend .input-message-text;
+  color: $red-600;
+}
+
+.input-helper-text {
+  @extend .input-message-text;
+  color: $gray-500;
+}

@@ -1,0 +1,39 @@
+@import './fonts';
+
+.base-font {
+  font-family: Inter;
+}
+
+.base-regular {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.base-medium {
+  @extend .base-regular;
+  font-weight: 500;
+}
+
+.small-regular {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.small-medium {
+  @extend .small-regular;
+  font-weight: 500;
+}
+
+.extra-small-regular {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+}
+
+.extra-small-medium {
+  @extend .extra-small-regular;
+  font-weight: 500;
+}

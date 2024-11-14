@@ -1,0 +1,275 @@
+@import '../../../styles/colors';
+@import '../../../styles/shadow';
+
+.calendar-wrapper {
+  margin-top: 32px;
+  display: flex;
+  width: inherit;
+  position: relative;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+
+  .calender-year-filter {
+    position: relative;
+    padding: 0 8px;
+    border-right: 1px solid $gray-200;
+    width: 175px;
+
+    .btn-base {
+      padding: 8px 12px;
+    }
+
+    .dropdown-wrapper {
+      @extend .shadow-lg;
+      position: absolute;
+      margin-top: 5px;
+      z-index: 1;
+      background-color: $white;
+      border: 1px solid $gray-100;
+      border-radius: 6px;
+      padding: 0;
+
+      &--optionTypes {
+        @extend .dropdown-wrapper;
+        width: 91px;
+        top: 38px;
+        z-index: 100000;
+        max-height: 40vh;
+        overflow: auto;
+
+        .list-item-content {
+          padding: 8px 16px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $gray-50;
+            h6 {
+              font-weight: 500;
+            }
+          }
+        }
+
+        .list-item-content.li-disabled {
+          background-color: $gray-100;
+          cursor: not-allowed;
+          h6 {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .timeline-container {
+    display: flex;
+    width: calc(100% - 175px);
+    overflow-x: auto;
+
+    .month-name-wrapper {
+      display: flex;
+
+      .month-name {
+        padding: 8px 12px;
+
+        .month-name-inner {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .survey-timeline-wrapper {
+      width: 100%;
+      height: 100%;
+      display: block;
+
+      .survey-timeline-frame {
+        position: absolute;
+        top: 18px;
+        width: 0;
+        padding: 19px 18px;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        overflow: hidden;
+        z-index: 1000;
+        min-width: 60px;
+
+        .survey-timeline-progress {
+          width: 0%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          border-radius: 4px;
+          max-width: 100%;
+        }
+
+        .event-title {
+          z-index: 5;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .badge {
+            cursor: default;
+          }
+        }
+
+        .timeline-survey-name {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .event-tooltip {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          z-index: 2;
+
+          .timeline-survey-name-truncate {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .survey-name-tooltip {
+            display: flex;
+            cursor: pointer;
+
+            i {
+              font-size: 24px;
+              color: $brand-midnight;
+            }
+          }
+        }
+      }
+
+      .progress-color--active {
+        background-color: $blue-200;
+
+        .survey-timeline-progress {
+          background-color: $blue-400;
+        }
+      }
+
+      .progress-color--planned {
+        background-color: $yellow-200;
+
+        .survey-timeline-progress {
+          background-color: $yellow-400;
+        }
+      }
+
+      .progress-color--finished {
+        background-color: $green-200;
+
+        .survey-timeline-progress {
+          background-color: $green-400;
+        }
+      }
+    }
+
+    .week-wrapper {
+      display: flex;
+
+      .week-col {
+        width: 200px;
+
+        .week-number {
+          width: calc(100% - 1px);
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #ffffff;
+          border-right: 1px solid $gray-200;
+        }
+
+        .week-slot-wrapper {
+          .timeline-period-wrapper {
+            position: absolute;
+            left: 8px;
+
+            .period-item {
+              height: 100px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+          }
+
+          .week-slot {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-right: 1px dashed $gray-400;
+            position: relative;
+
+            .week-day-wrapper {
+              display: flex;
+
+              .week-day {
+                width: 28.57px;
+              }
+            }
+
+            hr {
+              width: 100%;
+              position: absolute;
+              top: 42px;
+            }
+          }
+        }
+      }
+
+      // DAY
+      .day-col {
+        .day-wrapper {
+          width: 60px;
+          padding: 8px 0;
+          text-align: center;
+          background-color: #ffffff;
+          border-right: 1px solid $gray-200;
+        }
+
+        .week-slot-wrapper {
+          .timeline-period-wrapper {
+            position: absolute;
+            left: 8px;
+
+            .period-item {
+              height: 100px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+          }
+
+          .survey-timeline-wrapper {
+            position: relative;
+          }
+
+          .week-slot {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-right: 1px dashed $gray-400;
+
+            hr {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tooltip-survey-name-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

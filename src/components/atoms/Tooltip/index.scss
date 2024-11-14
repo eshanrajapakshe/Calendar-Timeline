@@ -1,0 +1,21 @@
+@import '../../../styles/colors';
+
+.tippy-box {
+  background-color: $brand-midnight !important;
+  color: $gray-200 !important;
+  max-width: 225px;
+  padding: 4px 16px !important;
+}
+
+.tippy-box[data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: $brand-midnight;
+}
+.tippy-box[data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: $brand-midnight;
+}
+.tippy-box[data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: $brand-midnight;
+}
+.tippy-box[data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: $brand-midnight;
+}

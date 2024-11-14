@@ -1,0 +1,9 @@
+@import '../../../styles/colors';
+
+hr.divider-solid {
+  border-top: 1px solid #e5e7eb;
+}
+
+hr.divider-dashed {
+  border-top: 1px dashed #e5e7eb;
+}

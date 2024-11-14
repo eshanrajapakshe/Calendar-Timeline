@@ -1,0 +1,161 @@
+@import '../../../styles/colors';
+@import '../../../styles/text';
+
+.typography-header {
+  font-family: 'Gimbal Grotesque';
+  font-weight: 500;
+  padding-bottom: 0.3em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.typography-body {
+  font-family: 'Inter';
+}
+
+.typography--variant-h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.typography--variant-h2 {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+}
+
+.typography--variant-h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.typography--variant-h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.typography--variant-h5 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.typography--variant-baseRegular {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.typography--variant-baseMedium {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.typography--variant-smallRegular {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.typography--variant-smallRegular {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.typography--variant-smallMedium {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.typography--variant-smallLink {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-decoration: underline;
+  padding: 0;
+  margin: 0;
+}
+
+.typography--variant-smallBold {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.typography--variant-extraSmallRegular {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.typography--variant-extraSmallMedium {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.typography--color-primary {
+  color: $gray-900;
+}
+
+.typography--color-gray-400 {
+  color: $gray-400;
+}
+
+.typography--color-gray-500 {
+  color: $gray-500;
+}
+
+.typography--color-gray-600 {
+  color: $gray-600;
+}
+
+.typography--color-gray-800 {
+  color: $gray-800;
+}
+
+.typography--color-gray-900 {
+  color: $gray-900;
+}
+
+.typography--color-brand-midnight {
+  color: $brand-midnight;
+}
+
+.typography--color-black {
+  color: #000000;
+}
+
+.typography--color-blue-700 {
+  color: $blue-700;
+}
+
+.typography--color-blue-600 {
+  color: $blue-600;
+}
+
+.typography--color-white {
+  color: #ffffff;
+}

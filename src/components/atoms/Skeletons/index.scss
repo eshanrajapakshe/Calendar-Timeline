@@ -1,0 +1,48 @@
+.summaries-skeleton {
+  span {
+    display: flex;
+    gap: 25px;
+  }
+}
+
+.title-skeleton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.survey-tiles-skeleton {
+  margin-top: 24px;
+
+  span {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.calendar-title-skeleton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.calendar-skeleton {
+  margin-top: 32px;
+}
+
+.calendar-wrapper-skeleton {
+  display: flex;
+  gap: 12px;
+
+  span:nth-child(2) {
+    flex-grow: 1;
+  }
+}
+
+.calendar-view-type-skeleton {
+  display: flex;
+  gap: 12px;
+}
